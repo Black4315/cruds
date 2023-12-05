@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+ <html> 
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="discription"  content="mahmed ahmad soliman" >
+<link rel="stylesheet" href="daily.css"/>
+        
+<title>TROPO</title>
+
+</head>
+<body>
+
+    <div class="crad">
+      <div class="head">
+        <h1>TROPO.com</h1>
+        <p>BIG PROGECT for crazy</p>
+
+      </div>
+    
+
+    <div class="inp">
+      <input type="text"  placeholder="Title" id="title">
+           <div class="pric">
+             <input onkeyup="totla()" onclick="totla()" type="number" placeholder="Price" id="price">
+             <input onkeyup="totla()" onclick="totla()" type="number" placeholder="Taxes" id="taxes">
+             <input onkeyup="totla()" onclick="totla()" type="number" placeholder="Ads" id="ads">
+             <input onkeyup="totla()"  onclick="totla()" type="number" placeholder="Discount" id="discount">
+           <small id="total" ></small>
+           </div>
+           <input type="number"  placeholder="Count" id="count" maxlength="6" >
+           <input type="text" placeholder="Category" id="category">
+          <button id="create" onclick="sere()">Create</button>
+     
+    </div>
+
+<div class="out">
+  <div class="srechblock">
+  <input type="text" placeholder="Search By Title" id="search" onkeyup="searchdata(this.value.toLowerCase())">
+  <div class="btn">
+<button id="searchTitle" onclick="getSearchMood(this.id)" >Search By Title</button>
+<button id="searchCat"   onclick="getSearchMood(this.id)" >Search By Category</button>
+</div>
+<div id="deleteAll">
+  
+</div>
+  </div>
+<table>
+  <tr>
+  <th>id</th>
+  <th>Title</th>
+  <th>Price</th>
+  <th>Taxes</th>
+  <th>ads</th>
+  <th>discount</th>
+  <th>total</th>
+  <th>category</th>
+  <th>update</th>
+  <th>delete</th>
+  </tr>
+
+  <tbody id="tbody">
+
+
+</tbody>
+</table>
+  
+
+</div>
+
+
+
+
+</div>
+<script src="jz.js"></script>
+</body>
+</html>
